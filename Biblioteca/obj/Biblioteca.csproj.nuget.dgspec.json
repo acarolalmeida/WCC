@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carol Almeida\\Desktop\\WCC\\Biblioteca\\Biblioteca.csproj": {}
+    "C:\\Users\\Carol Almeida\\Desktop\\WCC\\WCC\\Biblioteca\\Biblioteca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carol Almeida\\Desktop\\WCC\\Biblioteca\\Biblioteca.csproj": {
+    "C:\\Users\\Carol Almeida\\Desktop\\WCC\\WCC\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carol Almeida\\Desktop\\WCC\\Biblioteca\\Biblioteca.csproj",
+        "projectUniqueName": "C:\\Users\\Carol Almeida\\Desktop\\WCC\\WCC\\Biblioteca\\Biblioteca.csproj",
         "projectName": "Biblioteca",
-        "projectPath": "C:\\Users\\Carol Almeida\\Desktop\\WCC\\Biblioteca\\Biblioteca.csproj",
+        "projectPath": "C:\\Users\\Carol Almeida\\Desktop\\WCC\\WCC\\Biblioteca\\Biblioteca.csproj",
         "packagesPath": "C:\\Users\\Carol Almeida\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carol Almeida\\Desktop\\WCC\\Biblioteca\\obj\\",
+        "outputPath": "C:\\Users\\Carol Almeida\\Desktop\\WCC\\WCC\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Carol Almeida\\AppData\\Roaming\\NuGet\\NuGet.Config"
