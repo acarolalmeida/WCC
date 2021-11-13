@@ -9,31 +9,44 @@ namespace Biblioteca{
         private string[] genero{get; set;}
         private Autora autorLivro{get; set;}
 
-        public string Titulo{
+        public string Titulo
+        {
             get {return titulo;}
             set {titulo = value;}
         }
 
-        public string Descricao{
+        public string Descricao
+        {
             get {return descricao;}
             set {descricao = value;}
         }
 
-        public double Preco{
+        public double Preco
+        {
             get {return preco;}
             set {preco = value;}
         }
 
-        public string[] Genero{
+        public string[] Genero
+        {
             get {return genero;}
             set {genero = value;}
         }
 
-        public Autora Autora{
+        public Autora Autora
+        {
             get {return autorLivro;}
             set {autorLivro = value;}
         }
 
-        public Livro(){}
+        public Livro()
+        {
+
+        }
+
+        public Livro Cadastrar()
+        {
+            return this;
+        }
     }
 } 

@@ -1,17 +1,20 @@
 using System;
 
-namespace Biblioteca{
+namespace Biblioteca
+{
+    public class Autora
+    {
+        private string nome {get; set;}
+        
+        public string Nome
+        {
+            get {return nome;}
+            set {nome = value;}
+        }
+        
+        public Autora()
+        {
 
-    public class Autora{
-
-    private string nome {get; set;}
-    
-    public string Nome{
-        get {return nome;}
-        set {nome = value;}
-    }
-    
-    public Autora(){}
-    
+        }
     }
 }   
