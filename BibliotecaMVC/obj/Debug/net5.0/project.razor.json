@@ -15619,6 +15619,11 @@
   "RootNamespace": "BibliotecaMVC",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Carol Almeida\\Desktop\\WCC\\WCC\\BibliotecaMVC\\Views\\Livro\\Livro.cshtml",
+      "TargetPath": "Views\\Livro\\Livro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Carol Almeida\\Desktop\\WCC\\WCC\\BibliotecaMVC\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

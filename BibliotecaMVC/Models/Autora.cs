@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace BibliotecaMVC
 {
@@ -6,15 +7,28 @@ namespace BibliotecaMVC
     {
         private string nome {get; set;}
         
-        public string Nome
-        {
-            get {return nome;}
-            set {nome = value;}
-        }
-        
         public Autora()
         {
 
         }
+
+        public Autora(string nome)
+        {
+            Nome = nome;
+        }
+
+        public string Nome
+        {
+            get {return nome;}
+            set {nome = value;}
+            //set {nome = $"{value} perfeita";}
+        }
+
+        public List<Autora> Model => new List<Autora>() 
+        {
+            this, 
+            new Autora("Djamila")
+        };
+
     }
-}   
+}  

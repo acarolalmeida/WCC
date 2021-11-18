@@ -6,12 +6,8 @@ namespace BibliotecaMVC
     {  
         public IActionResult Autora()
         {
-            return View();
-        }
-        
-        public string Welcome()
-        {
-            return "Boas Vindas!";
+            var listaDeAutoras = new Autora("Ana").Model;
+            return View(listaDeAutoras);
         }
     }
 }

@@ -39,3 +39,4 @@ C:\Users\Carol Almeida\Desktop\WCC\WCC\BibliotecaMVC\obj\Debug\net5.0\Biblioteca
 C:\Users\Carol Almeida\Desktop\WCC\WCC\BibliotecaMVC\obj\Debug\net5.0\BibliotecaMVC.genruntimeconfig.cache
 C:\Users\Carol Almeida\Desktop\WCC\WCC\BibliotecaMVC\obj\Debug\net5.0\BibliotecaMVC.csproj.CopyComplete
 C:\Users\Carol Almeida\Desktop\WCC\WCC\BibliotecaMVC\obj\Debug\net5.0\Razor\Views\Autora\Autora.cshtml.g.cs
+C:\Users\Carol Almeida\Desktop\WCC\WCC\BibliotecaMVC\obj\Debug\net5.0\Razor\Views\Livro\Livro.cshtml.g.cs
