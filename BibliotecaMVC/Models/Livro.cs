@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using BibliotecaMVC.Service;
 
 namespace BibliotecaMVC
 {
@@ -65,5 +66,27 @@ namespace BibliotecaMVC
             this,
             new Livro("Lugar de Fala", "", 18.90, new string[]{}, new Autora("Djamila"))
         };
+
+        public List<Livro> GetLivros()
+        {
+            var servico = new BibliotecaService();
+            var resposta = servico.BuscaLivro();
+            var listaDeLivro = new List<Livro>();
+
+            foreach (var item in resposta.Results)
+            {
+                var livro = new Livro()
+                {
+                    Titulo = item.TrackName,
+                    Autora = new Autora(item.ArtistName),
+                    Preco = item.Price,
+                    Genero = item.Genres,
+                    Descricao = item.Description
+                };
+                listaDeLivro.Add(livro);
+            }
+
+            return listaDeLivro;
+        }
     }
 } 

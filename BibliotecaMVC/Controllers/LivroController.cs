@@ -7,6 +7,7 @@ namespace BibliotecaMVC
     {  
         public IActionResult Livro()
         {
+            /*
             var listaDeLivros = new Livro("Quem tem medo do feminismo negro", "", 20.00, new string[]{}, new Autora("Djamila")).Model;
            
             var autora = new Autora("Djamila");
@@ -27,6 +28,10 @@ namespace BibliotecaMVC
             
             listaDeLivros.Add(livroUm);
             listaDeLivros.Add(livroDois);
+            */
+
+            Livro livro = new Livro();
+            var listaDeLivros = livro.GetLivros();
 
             return View(listaDeLivros);
         }
