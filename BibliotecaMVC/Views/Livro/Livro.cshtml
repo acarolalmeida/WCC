@@ -5,9 +5,17 @@
 
 <h1>Livro</h1>
 
+<form asp-controller = "Livro" asp-action = "Livro">
+    <p>
+        Termo: <input type = "text" name = "textoPesquisa" />
+        <input type  = "submit" value = "Pesquisar" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
+            <th></th>
             <th> @Html.DisplayNameFor(model => model.Titulo) </th>
             <th> @Html.DisplayNameFor(model => model.Autora) </th>
             <th> @Html.DisplayNameFor(model => model.Preco) </th>
@@ -18,6 +26,7 @@
         @foreach (var item in Model)
         {
             <tr>
+                <td> <img src = "@Html.DisplayFor(modelItem => item.ImagemUrl)"/> </td>
                 <td> @Html.DisplayFor(modelItem => item.Titulo) </td>
                 <td> @Html.DisplayFor(modelItem => item.Autora.Nome) </td>
                 <td> @Html.DisplayFor(modelItem => item.Preco) </td>

@@ -10,11 +10,11 @@ namespace BibliotecaMVC.Service
         private string termo = "";
         private string parametros = "";
 
-        public Response BuscaLivro()
+        public Response BuscaLivro(string textoPesquisa)
         {
             //string texto = "";
             Response retorno = null;
-            parametros = $"?term=swift&entity=ibook";
+            parametros = $"?term={textoPesquisa}&entity=ibook";
             var newUrl = $"{url}{parametros}";
 
             HttpClient clientApi = new HttpClient
