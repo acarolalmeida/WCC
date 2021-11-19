@@ -1,14 +1,38 @@
 using System;
+using System.Collections.Generic;
+using BibliotecaMVC.Service;
 
 namespace BibliotecaMVC
 {
     public class Livro{
 
+        [System.ComponentModel.Bindable(true)]
+        private string imagemUrl{get; set;}
         private string titulo{get; set;}
         private string descricao{get; set;}
         private double preco{get; set;}
         private string[] genero{get; set;}
         private Autora autorLivro{get; set;}
+
+        public Livro()
+        {
+
+        }
+
+        public Livro(string titulo, string descricao, double preco, string[] genero, Autora autora)
+        {
+            Titulo = titulo; 
+            Descricao = descricao;
+            Preco = preco;
+            Genero = genero;
+            Autora = autora;
+        }
+
+        public string ImagemUrl
+        {
+            get {return imagemUrl;}
+            set {imagemUrl = value;}
+        }
 
         public string Titulo
         {
@@ -40,14 +64,38 @@ namespace BibliotecaMVC
             set {autorLivro = value;}
         }
 
-        public Livro()
-        {
-
-        }
-
         public Livro Cadastrar()
         {
             return this;
+        }
+
+        public List<Livro> Model => new List<Livro>()
+        {
+            this,
+            new Livro("Lugar de Fala", "", 18.90, new string[]{}, new Autora("Djamila"))
+        };
+
+        public List<Livro> GetLivros(string textoPesquisa)
+        {
+            var servico = new BibliotecaService();
+            var resposta = servico.BuscaLivro(textoPesquisa);
+            var listaDeLivro = new List<Livro>();
+
+            foreach (var item in resposta.Results)
+            {
+                var livro = new Livro()
+                {
+                    ImagemUrl = item.ArtworkUrl60,
+                    Titulo = item.TrackName,
+                    Autora = new Autora(item.ArtistName),
+                    Preco = item.Price,
+                    Genero = item.Genres,
+                    Descricao = item.Description
+                };
+                listaDeLivro.Add(livro);
+            }
+
+            return listaDeLivro;
         }
     }
 } 
